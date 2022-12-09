@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <div>昼か夜を判定する。</div>
+    <script>
+      var d = new Date(); 
+      var h = d.getHours(); 
+      if (h < 6 || h > 18) {
+        msg = '夜'; 
+      }else{
+        msg = '昼'; 
+      }
+      document.write('今、'+msg+'です。');
+    </script>
+  </body>
+</html>

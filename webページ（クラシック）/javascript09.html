@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang = "ja">
+  <head>
+    <meta charset="utf-8">
+    <script type="text/javascript">
+      function check(){
+        if (document.forms.form01.shimei01.value == ""
+         || document.forms.form01.shimei02.value == ""){
+          alert("必須項目を入力してください");
+        }else{
+          e = document.getElementById("result"); 
+          e.innerHTML =
+           "氏名  :" + document.form01.shimei01.value + "<br>\n" + 
+           "ふりがな:" + document.form01.shimei02.value + "<br>\n";
+         } 
+       }
+    </script>
+  </head>
+  <body> 
+    <div>      <form name="form01" action="">
+        氏名  (必須):<input type="text" id="shimei01"><br> 
+        ふりがな(必須):<input type="text" id="shimei02"><br> 
+        <input type="button" value="実行" onClick="check();">
+      </form>
+    </div>
+    <div id="result"></div>
+  </body>
+</html>

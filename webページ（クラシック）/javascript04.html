@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <div>日時を表示する。</div>
+    <button onclick="getDate();">実行します。</button> 
+    <div id="showDate">[ここに表示します。]</div> 
+    <div>終わり。</div>
+    <script>
+      function getDate(){
+        var d = new Date(); 
+        var h = d.getHours(); 
+        var msg, bgc;
+        if(h < 6){
+          msg = '未明';
+          bgc = '#F5F5F5';  // WhiteSmoke
+        }else if(h < 12){
+          msg = '午前';
+          bgc = '#E0FFFF';  // LightCyan
+        }else if(h < 18){
+          msg = '午後';
+          bgc = '#add8e6';  // LightBlue
+        }else{
+          msg = '夜';
+          bgc = '#D3D3D3'; // LightGray
+        }
+        var e = document.getElementById("showDate"); 
+        e.innerHTML= d+'<br>今、'+msg+'です。';
+        document.bgColor = bgc; }
+    </script>
+  </body>
+</html>

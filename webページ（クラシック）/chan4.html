@@ -1,0 +1,61 @@
+<!DOCTYPE>
+<html lang = "ja">
+  <head>
+    <meta charset="utf-8">
+      <link rel = "stylesheet" href = "style1_chan4.css">
+    <title>お問い合わせ</title>
+    <script type="text/javascript">
+  　  function check(){
+       if (document.forms.form01.shimei01.value == ""
+       || document.forms.form01.shimei02.value == ""){
+       alert("必須項目を入力してください");
+     }else{
+        e = document.getElementById("result");
+        e.innerHTML =
+         "氏名  :" + document.form01.shimei01.value + "<br>\n" +
+         "ふりがな:" + document.form01.shimei02.value + "<br>\n"+
+         "内容:" + document.form01.shimei03.value + "<br>\n";
+     }
+   }
+</script>
+
+  </head>
+  <body>
+    <!--nav id = "tabu">
+      <ul>
+        <li><a href="index.html" class="menu">目次へ</a></li>
+        <li><a href="chan1.html" class="menu">大まかな音歴史について</a></li>
+        <li><a href="chan2.html" class="menu">有名な作曲家を紹介</a></li>
+        <li><a href="chan3.html" class="menu">演習リンク</a></li>
+
+      </ul>
+    </nav-->
+    <div class ="container">
+      <div class ="containerOverlay">
+      </div>
+
+      <a href="index.html" class="button">戻る</a>
+
+      <header>
+        <h1 class = "dai">お問い合わせ</h1>
+        <p class ="sen">何か質問がありましたら、ご連絡ください。</p>
+        <hr class="head">
+      </header>
+
+      <div class = "main">
+        <div class ="fo">
+          <form name="form01" action="">
+            <div class = fo01>氏名  (必須):<input type="text" id="shimei01"></div><br>
+            <div class =fo01>ふりがな(必須):<input type="text" id="shimei02"></div><br>
+            <div class =fo02>内容:<input type="text" id="shimei03"></div><br>
+            <input type="button" value="実行" onClick="check();">
+         </form>
+      </div>
+
+      <div id="result"></div>
+
+
+      </div><!--main-->
+    </div><!--container-->
+  </body>
+</html>

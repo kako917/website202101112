@@ -1,0 +1,187 @@
+* {
+	box-sizing: border-box;
+  margin: 0;
+　padding: 0;
+
+}
+
+a{
+	text-decoration: none;
+	color: #fff0f5;
+}
+a:hover{
+	 color: #f8f8ff;
+}
+
+
+
+
+.button {
+	display: block;
+	float: left;
+	clear: left;
+	margin-bottom: 16px;
+	padding: 0 10px;
+	background: #8fbc8f;
+	color: ##4682b4;
+	border-bottom: 2px solid #d3d3d3;
+	border-radius: 10px;
+	text-decoration: none;
+	line-height: 40px;
+}
+
+.baro{
+	font-size: 20px;
+	padding: 0.5em 1em;
+  margin: 1em 0;
+  background: #f5f5f5;
+	opacity:0.8;
+  border-left: solid 6px #8fbc8f;
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.33);
+	width: 500px;
+}
+
+
+.container {
+	height: 550vh;
+	z-index: 2;
+  width: 100%;
+	padding: 30px 50px;
+	background: #e6e6fa;
+}
+
+.com{
+	 margin-left: 100px;
+	 margin-bottom: 50px;
+}
+
+.com_name{
+  font-size: 25px;
+	margin: 16px 16px;
+	color:#4682b4;
+}
+
+
+/*.containerOverlay {
+	display:none;
+	background: rgba(0,0,0,.3);
+}
+
+.containerOverlay,
+.containerOverlay a {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}*/
+
+.dai{
+	 font-size: 50px;
+	 color:#4682b4;
+}
+
+.head{
+	border:solid 2px #4682b4;
+	margin-bottom: 50px;
+	margin-top: 50px;
+}
+
+.intro{
+	 margin: 20px 20px;
+	 font-size: 18px;
+}
+
+header{
+	text-align:center;
+}
+
+li{
+	font-size: 15px;
+	margin-bottom: 10px;
+}
+
+.piece{
+	padding: 0.2em 0.5em;
+    margin: 2em 0;
+    background: #5f9ea0;
+    box-shadow: 0px 0px 0px 10px  #5f9ea0;
+    border: dashed 2px white;
+		width: 300px;
+}
+
+/*nav {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	-webkit-transform: translate3d(-100%, 0, 0);
+	-webkit-transition: -webkit-transform 0.5s;
+	-webkit-backface-visibility: hidden;
+	-webkit-perspective: 1000;
+
+	width: 20%;
+	background: #8fbc8f;
+}
+
+
+
+nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;;
+}
+nav li {
+	display: block;
+	padding: 10px 20px;
+	border-bottom: 2px solid #778899;
+}
+nav:target {
+	z-index: 3;
+	-webkit-transform: translate3d(0, 0, 0);
+}
+nav:target ~ .container .containerOverlay {
+	display: block;
+}*/
+
+.pi_sen{
+	 font-size: 20px;
+	 margin-bottom: 20px;
+}
+
+.time{
+	 color: #4682b4
+}
+
+
+.sen{
+   color:#000;
+	 font-size: 20px;
+	 margin-bottom: 20px;
+}
+/*#tabu {
+  z-index: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+}
+#tabu:target ~ .container {
+  -webkit-transform: translate3d(22%, 0, 0);
+}*/
+
+ul{
+	 margin-top: 20px;
+	 margin-left: 20px;
+
+}
+
+html, body {
+height: 100%;
+min-height: 100%;
+}
+
+img{
+	float: right;
+	margin-right:  150px;
+	background-color: #778899;
+	border-radius: 200px;
+	width:250px;
+	height: 250px;
+}
